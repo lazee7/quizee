@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quizee - quiz</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="../css/index.css">
+  <link rel="stylesheet" href="../css/quiz.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1>Quizee</h1>
+      <p class="capitalize">
+        <i class="fa-regular fa-user"></i>
+        <span id="username"></span>
+      </p>
+    </header>
+    <main class="flex-column-center">
+      <header class="quiz-header">
+        <label for="quiz-progress" id="label-progress"></label>
+        <progress value="1" max="10" class="progress-bar" id="quiz-progress"></progress>
+        <p>score : <span id="score">0</span></p>
+      </header>
+      <section class="quiz-section">
+        <div class="quiz-question">
+          <p id="question"></p>
+        </div>
+        <div id="options" class="options-container">
+          <div class="option-container">
+            <span>A</span>
+            <button data-index="0" class="options"></button>
+          </div>
+          <div class="option-container">
+            <span>B</span>
+            <button data-index="1" class="options"></button>
+          </div>
+          <div class="option-container">
+            <span>C</span>
+            <button data-index="2" class="options"></button>
+          </div>
+          <div class="option-container">
+            <span>D</span>
+            <button data-index="3" class="options"></button>
+          </div>
+        </div>
+        <button type="button" id="next">next</button>
+      </section>
+      <section>
+        <p id="category"></p>
+        <p id="difficulty"></p>
+      </section>
+    </main>
+  </div>
+
+  <script src="../js/quiz.js"></script>
+</body>
+</html>

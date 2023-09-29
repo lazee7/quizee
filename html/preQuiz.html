@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quizee - select quiz</title>
+  <link rel="stylesheet" href="../css/index.css">
+  <link rel="stylesheet" href="../css/preQuiz.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Quizee</h1>
+    </header>
+    <main class="flex-column-center">
+
+      <div class="show-error hidden">
+        <p id="error" class="capitalize"></p>
+      </div>
+      <select name="category" id="category">
+        <option value="">category</option>
+        <option value="9">general knowledge</option>
+        <option value="10">Entertainment: Books</option>
+        <option value="11">Entertainment: Film</option>
+        <option value="12">Entertainment: Music</option>
+        <option value="13">Entertainment: musicals & theatres</option>
+        <option value="14">Entertainment: television</option>
+        <option value="15">video games</option>
+        <option value="16">board games</option>
+        <option value="17">science & nature</option>
+        <option value="18">Science: computers</option>
+        <option value="19">science: mathematics</option>
+        <option value="20">mythology</option>
+        <option value="21">sports</option>
+        <option value="22">geography</option>
+        <option value="23">history</option>
+        <option value="24">politics</option>
+        <option value="25">arts</option>
+        <option value="26">celebrities</option>
+        <option value="27">animals</option>
+        <option value="28">vehicles</option>
+        <option value="29">Entertainment: comics</option>
+        <option value="30">science: gadgets</option>
+        <option value="31">Entertainment: japanese anime & manga</option>
+        <option value="32">Entertainment: cartoon & animations</option>
+      </select>
+
+      <select name="difficulty" id="difficulty">
+        <option value="">difficulty</option>
+        <option value="easy">easy</option>
+        <option value="medium">medium</option>
+        <option value="hard">hard</option>
+      </select>
+      <button id="pre-quiz-btn" class="link-btn capitalize">continue</>
+    </main>
+  </div>
+  <footer>made with ❤ by lazee - &copy; 2023</footer>
+  <script src="../js/preQuiz.js"></script>
+</body>
+</html>
