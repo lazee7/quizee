@@ -12,7 +12,6 @@ const questionElement = document.querySelector('#question');
 const options = Array.from(document.querySelectorAll('.options'));
 
 const questionBank = JSON.parse(localStorage.getItem('quizQuestions'));
-console.log(questionBank);
 
 let currentQuizIndex = 0;
 let correctAnswer = null;

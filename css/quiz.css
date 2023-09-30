@@ -3,6 +3,10 @@
   padding-inline: 0.7rem;
 }
 
+.header {
+  position: fixed;
+}
+
 .quiz-section {
   display: flex;
   flex-direction: column;
@@ -73,6 +77,18 @@
   text-transform: capitalize;
   font-size: 1.1rem;
   align-self: flex-end;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+  transition-property: transform;
+}
+
+#next:hover {
+  scale: 0.9;
+  opacity: 0.8;
+}
+
+#next:active {
+  scale: 1.1;
 }
 
 .quiz-header {
