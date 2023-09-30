@@ -6,7 +6,8 @@ const submitBtn = document.getElementById('info-btn');
 
 // validate user name
 function validateSelection(value) {
-  if (!value || value.length < 3) {
+  const val = value.trim();
+  if (!val || val.length < 3) {
     showErrorElement.classList.remove('hidden');
     errorElement.textContent = 'name must be at least 3 characters!';
     return false;

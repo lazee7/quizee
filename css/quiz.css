@@ -22,7 +22,9 @@
   background-blend-mode: overlay, normal;
   backdrop-filter: blur(40px);
   padding: 1.5rem 0.9rem;
-  border-radius: 2px;
+  border-radius: 4px;
+  line-height: 1.7;
+  letter-spacing: 1px;
 }
 
 .option-container {
@@ -105,4 +107,5 @@ progress::-moz-progress-bar {
   .container {
     padding-inline: 2rem;
   }
+
 }

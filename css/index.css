@@ -7,6 +7,8 @@
   --dark: #535050;
   --secondary-bg: #11B1FB;
   --light-bg: #8888EA;
+  --purple: #A48DD1;
+  --orange: #EC8870;
 }
 
 * {
@@ -72,13 +74,22 @@ a {
   text-decoration: none;
 }
 
+h1 {
+  font-weight: 700;
+  color: var(--main-fg);
+}
+
 .link-btn {
-  background-color: var(--secondary-bg);
+  background-color: var(--purple);
   padding: 0.6rem 2rem;
   border-radius: 1em;
   color: var(--dark);
   align-self: center;
+  font-size: large;
+  font-weight: 600;
+  text-transform: capitalize;
 }
+
 
 .flex-column-center {
   display: flex;
@@ -102,24 +113,80 @@ a {
   display: none;
 }
 
+.orange {
+  color: var(--orange);
+}
+
+.show-error {
+  background-color: rgba(155, 116, 116, 0.7);
+  padding: 0.9rem;
+  border-radius: 8px;
+}
+
 #error {
-  color: rgba(255, 30, 30, 0.9);
+  color: rgba(255, 0, 0, 1);
+  font-weight: 600;
+  font-size: 1.1rem;
 }
 
 .header {
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   background-color: var(--light-bg);
   width: 100%;
-  padding: 0.8rem 0.7rem;
+  padding: 0.9rem 0.7rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 20;
 }
 
+a,
+.btn,
+.link-btn {
+  transition-duration: 0.4s;
+  transition-property: background, color, transform;
+  transition-timing-function: ease-in-out;
+}
+
+a:hover,
+.btn:hover,
+.link-btn:hover {
+  background-color: var(--orange);
+  color: var(--main-fg);
+  scale: 0.9;
+}
+
+.dark {
+  color: var(--dark);
+}
+
+@media screen and (min-width:765px) {
+
+  .main-container,
+  .container {
+    width: 50%;
+  }
+}
 
 @media screen and (min-width:1024px) {
+
+  .main-container,
+  .container {
+    width: 40%;
+  }
+
+  .header {
+    position: fixed;
+    padding-inline: 10rem;
+    padding-block: 2.3rem;
+  }
+}
+
+@media screen and (min-width:1200px) {
+
+  .main-container,
   .container {
     width: 30%;
   }
